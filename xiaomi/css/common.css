@@ -1,0 +1,202 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.lt{
+    float: left;
+}
+.rt{
+    float: right;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+a{
+    color: #333333;
+}
+/*顶部导航开始*/
+.header{
+    width:100%;
+    height: 40px;
+    background-color: #333;
+    font-size: 12px;
+}
+.container{
+    width: 1226px;
+    margin:0 auto;
+}
+.top{
+    width: 100%;
+    margin-top: 22px;
+    height: 78px;
+}
+.header_left,.header_right{
+    height:40px;
+    line-height:40px;
+}
+.header a{
+    color: #b0b0b0;
+}
+.header_left .sep,.header_right .sep{
+    margin: 0 .5em;
+    color: #424242;
+}
+.shoppingcar{
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    padding: 0 5px;
+}
+.shoppingcar:hover{
+    background-color: white;
+}
+.shoppingcar:hover .shopping_goods{
+    opacity: 1;
+    top:40px;
+    display: block;
+    height: 85px;
+    transition: all .5s;
+}
+.shoppingcar:hover a{
+    color: #ff6700;
+    background: url("../images/gwc2.png") no-repeat 0;
+}
+.shoppingcar a{
+    padding-left: 24px;
+    background: url("../images/gwc1.png") no-repeat 0;
+}
+.shopping_goods{
+    position: absolute;
+    right: 0;
+    width: 316px;
+    height:0;
+    padding:15px 0 0;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    z-index: 3;
+    opacity: 0;
+    display: none;
+    transition: height .5s;
+}
+.mi_logo{
+}
+.mi_product{
+}
+.product_ul{
+    margin-left: 270px;
+}
+.product_ul li{
+    float: left;
+    padding: 0 10px;
+    line-height: 56px;
+}
+.product_ul li:hover a{
+    color: #ff6700;
+}
+
+.top_search{
+    width:296px;
+}
+.search_form{
+    position: relative;
+    width:296px;
+    height:50px;
+}
+.search_form_hover .search_text{
+    border-color: #b0b0b0;
+}
+.search_form_hover .search_btn{
+    border-color: #b0b0b0;
+}
+.search_text{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 223px;
+    height: 48px;
+    padding: 0 10px;
+    line-height: 48px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    outline: 0;
+    box-sizing: content-box;
+    transition: all .2s;
+}
+.search_form .search_text_focus{
+    border-color: #ff6700;
+}
+.search_btn{
+    position: absolute;
+    right:0;
+    top:0;
+    width: 52px;
+    height: 50px;
+    border:1px solid #e0e0e0;
+    color: #616161;
+    outline: 0;
+    background-color: white;
+    background: url("../images/search1.png") no-repeat center;
+}
+.search_form .search_btn_focus{
+    border-color: #ff6700;
+}
+.search_btn:hover{
+
+    /*color: #fff;*/
+    background: url("../images/search2.png") no-repeat center;
+    background-color: #ff6700;
+    border:none
+}
+.search_hot_words{
+    position: absolute;
+    top:14px;
+    right: 62px;
+    z-index: 2;
+    text-align: right;
+}
+.search_hot_words a{
+    display: inline-block;
+    margin-left: 5px;
+    padding: 0 5px;
+    font-size:12px;
+    background: #eee;
+    color: #757575;
+}
+.search_hot_words a:hover{
+    background-color: #ff6700;
+    color: white;
+}
+.search_hot_list{
+    position: absolute;
+    left: 0;
+    top:49px;
+    width: 243px;
+    border: 1px solid #ff6700;
+    z-index: 3;
+    background-color: white;
+    display: none;
+}
+.search_hot_list li{
+    width: 100%;
+    height: 30px;
+}
+.search_hot_list a{
+    display: block;
+    line-height: 30px;
+    font-size: 12px;
+}
+.search_hot_list a:hover{
+    background-color: #fafafa;
+}
+.hot_name,.hot_num{
+    padding: 0 10px;
+}
+.hot_num{
+    display: inline-block;
+    float: right;
+    color: #b0b0b0;
+}
+/*顶部导航结束*/
